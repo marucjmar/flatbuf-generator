@@ -27,6 +27,19 @@ Your geospatial data never leaves your machine.
 
 ---
 
+## 🧵 Web Workers Powered
+
+To ensure smooth performance and a non-blocking UI, the heavy processing is executed inside **Web Workers**.
+
+This means:
+
+- The UI stays responsive during large file conversions  
+- GeoJSON parsing and encoding run in a separate thread  
+- Better performance for large datasets  
+- No freezing or blocking of the main thread  
+
+---
+
 ## 🦀 Powered by Rust + WebAssembly
 
 This tool is built on top of the official **FlatGeobuf Rust implementation** and compiled to WebAssembly.
@@ -48,6 +61,7 @@ It is compiled to WASM to run directly inside the browser at near-native perform
 
 - Convert GeoJSON → FlatGeobuf
 - Runs entirely in the browser
+- Web Workers for non-blocking processing 
 - No backend required
 - Fast WASM-based processing
 - Supports large datasets
@@ -81,7 +95,7 @@ https://marucjmar.github.io/flatbuf-generator/
 - FlatGeobuf
 - Vite
 - TypeScript
-
+- Web Workers  
 ---
 
 ## 📄 License
