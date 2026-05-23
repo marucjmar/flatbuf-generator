@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-flatgeobuf = { path = "/Users/marcin/development/flatgeobuf/src/rust/" }
+flatgeobuf = { git = "https://github.com/marucjmar/flatgeobuf" }
 geozero = "0.15.1"
 wasm-bindgen = "0.2"
 console_error_panic_hook = "0.1"
