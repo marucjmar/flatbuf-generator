@@ -7,8 +7,10 @@ init().then(() => {
   console.error("WASM initialization failed:", err);
 });
 
+export type EncodeOptions = Partial<PartialFgbWriterOptions>;
+
 export class API {
-  public encode(bytes: Uint8Array, opts: PartialFgbWriterOptions): Uint8Array {
+  public encode(bytes: Uint8Array, opts: EncodeOptions): Uint8Array {
     return enc(bytes, opts);
   }
 }
